@@ -1,0 +1,29 @@
+*{
+background-color: black;
+}
+
+
+#sketchpad{
+    background-color: aliceblue;
+    
+    border: 1px solid silver;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+        
+
+}
+.square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background-color: pink;
+    display: inline-block;
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
