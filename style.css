@@ -1,29 +1,34 @@
 *{
-background-color: black;
-}
-
-
-#sketchpad{
-    background-color: aliceblue;
-    
-    border: 1px solid silver;
-    display: flex;
-    flex-wrap: wrap;
-    line-height: 0;
-        
-
-}
-.square {
-    width: 20px;
-    height: 20px;
-    border: 1px solid black;
-    background-color: pink;
-    display: inline-block;
-
+background-color:bisque;
 }
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
+
+#sketchpad{
+    background-color: aliceblue;
+    border: 1px solid silver;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+    width: 960px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;  
+    box-sizing: border-box;   
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+    border: 1px solid silver;
+    background-color: whitesmoke;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+
