@@ -10,9 +10,9 @@ function createGrid(gridSize) {
     const containerWidth = container.offsetWidth;
     const squareSize = (containerWidth - ((gridSize - 1) * 2 + 2) ) / gridSize;
 
-    for (let i = 0; i < gridSize; i++) {
-        counter2++
-        for (let j = 0; j < gridSize; j++) {
+    for (let firstIterator = 0; firstIterator < gridSize; firstIterator++) {
+        counter2++;
+        for (let secondIterator = 0; secondIterator < gridSize; secondIterator++) {
             const square = document.createElement("div");
             square.classList.add("square");
             square.style.width = `${squareSize}px`;
@@ -23,7 +23,6 @@ function createGrid(gridSize) {
             square.addEventListener("mouseover",() =>{
                 square.style.backgroundColor = "black"
             });
-            
         }
 
         const lineBreak = document.createElement("br");
@@ -65,10 +64,3 @@ magicButton.addEventListener("click", () =>{
 })
 
 createGrid(10);
-
-
-
-
-
-
-
