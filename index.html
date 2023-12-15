@@ -9,13 +9,12 @@
 </head>
 <body>
     <main>
-        <div id="button-container">
-        <button id="magic-button">Magic</button>
-        </div>
-        <div id="sketchpad">
+        <fieldset class="borderNone" id="button-container">
+            <button class="prettyButton" id="magic-button">Magic</button>
+        </fieldset>
+        <output id="sketchpad" onmouseleave="setClearColorTimer()" onmouseover="resetCleanTimer()">
             
-        </div>
-        
+        </output>
     </main>
     <script src="script.js" defer></script>
 </body>

@@ -1,34 +1,43 @@
-*{
-background-color:bisque;
+* {
+    background-color:bisque;
 }
 
-main{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
-#sketchpad{
+#sketchpad  {
     background-color: aliceblue;
-    border: 1px solid silver;
     display: flex;
     flex-wrap: wrap;
     line-height: 0;
     width: 960px;
-    justify-content: center;
     align-items: center;
-    margin: 20px auto;  
-    box-sizing: border-box;   
+    box-sizing: content-box;   
 }
 
 .square {
-    width: 20px;
-    height: 20px;
     border: 1px solid silver;
     background-color: whitesmoke;
     display: inline-block;
-    box-sizing: border-box;
+    box-sizing: content-box;
+}
 
+.prettyButton {
+    border: 1px solid aqua;
+    background-color: azure;
+    min-height: 44px;
+    min-width: 120px;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: medium;
+    font-family: cursive;
+}
+
+.borderNone {
+    border: none;
 }
 
